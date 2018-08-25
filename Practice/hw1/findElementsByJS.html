@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find elements</title>
+</head>
+<body>
+	<div class="fruit">
+		<div class="apple">Яблоко</div>
+		<div class="orange">Апельсин</div>
+	</div>
+
+	<div class="vegetables">
+		<div class="carrot">Морковь</div>
+		<div class="tomato">Помидор</div>
+	</div>
+
+	<div class="cart">
+		<div class="tomato">Помидор</div>
+		<div class="apple">Яблоко</div>
+	</div>
+
+	////////////////////////////////////////////////////
+
+	<div class="fruit vegetables">
+		<div class="tomato">Помидор</div>
+	</div>
+
+	<script>
+		var apple = document.querySelectorAll('.fruit .apple');
+		var orange = document.querySelectorAll('.fruit .orange');
+		var carrot = document.querySelectorAll('.vegetables .carrot');
+		var tomato = document.querySelectorAll('.vegetables .tomato');
+		// var fruit = document.querySelector(".fruit");
+		// var apple;
+		// for (var i = 0; i < fruit.childNodes.length; i++) {
+  //   		if (fruit.childNodes[i].className == ".apple") {
+  //     			apple = fruit.childNodes[i];
+  //     			break;
+  //   		}        
+		// }
+		console.log(apple);
+		console.log(orange);
+		console.log(carrot);
+		console.log(tomato);
+
+		////////////////////////////// task 4
+
+		var tomato2 = document.querySelectorAll('.fruit .vegetables .tomato');
+		console.log(tomato2);
+
+
+	</script>
+</body>
+</html>
