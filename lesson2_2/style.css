@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+}
+
+.field {
+	width: 900px;
+	height: 500px;
+	margin: 50px auto;
+	border: 2px solid black;
+	position: relative;
+	background-color: #f7ec99;
+	box-shadow: 10px 10px 10px 10px #f4db1a;
+}
+
+.circle {
+	border: 1px solid red;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	margin: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.platform {
+	/*border: 1px solid grey;*/
+	background-color: grey;
+	position: absolute;
+	margin: 0;
+	width: 10px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+.platBot {
+	background-color: grey;
+	position: absolute;
+	left: 890px;
+	width: 10px;
+	height: 60px;
+	border-radius: 5px;
+}
