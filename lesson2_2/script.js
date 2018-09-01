@@ -16,25 +16,23 @@ document.addEventListener('keydown', function(e) {
 	switch(e.keyCode) {
 		case 38:
 			topKey -= 5;
-			// console.log(123);
 			break;
 		case 40:
 			topKey += 5;
 			break;
-
 	}
-	platform.style.top = topKey +"px";
 })
 
 function collision() {
 	if(circle.offsetTop > platform.offsetTop && circle.offsetTop < platform.offsetTop + platform.offsetHeight && circle.offsetLeft == platform.offsetLeft + platform.offsetWidth) {
 		boolX = true;
-		// console.log("fail");
+		// console.log(circle.offsetTop);
 	}
 	if(circle.offsetLeft == 0) {
 		clearInterval(interval);
 		alert("GAME OVER");
 	}
+	console.log(platform.offsetTop);
 }
 
 function offset() {
@@ -65,12 +63,17 @@ function offset() {
 	}
 circle.style.left = x + "px";
 circle.style.top = y + "px";
-if(y >= 840 && y <= 0) {
-	platform.style.top = y + "px";
-}
+
+	if(topKey >= 440) {
+		topKey = 440;
+	}
+	else if(topKey <= 0) {
+		topKey = 0;
+	}
+	platform.style.top = topKey + "px";
+
 collision();
 moveBot();
-// console.log(platform.offsetHeight);
 
 }
 

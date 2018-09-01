@@ -17,5 +17,4 @@ function clock() {
 	arrowMinute.style.transform = "rotateZ(" + 360/60 * minute + "deg)";
 	arrowSecond.style.transform = "rotateZ(" + 360/60 * second + "deg)";
 }
-
 setInterval(clock, 1000);
