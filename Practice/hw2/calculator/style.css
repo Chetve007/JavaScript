@@ -1,0 +1,19 @@
+.container {
+	background-color: #B9E31B;
+	border: 1px solid #E98315;
+	border-radius: 10px;
+	position: relative;
+	margin: 100px auto;
+	padding: 20px;
+	width: 700px;
+	height: 500px;
+}
+
+.calc {
+	position: absolute;
+	margin: 30px auto;
+	width: 600px;
+	height: 300px;
+}
+
+
