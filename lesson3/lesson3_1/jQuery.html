@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style3_1.css">
+	<title>jQuery Bubbles</title>
+</head>
+<body>
+
+	<div class="bubble"></div>
+	<div class="bubble"></div>
+	<div class="bubble"></div>
+	<div class="bubble"></div>
+	<div class="bubble"></div>
+	
+	<script src="D:\jQuery_lib\jquery-3.3.1.min.js"></script>
+	<script>
+		// document.querySelector(".class") IS == $(".class")
+
+		// addEventListener => on 
+
+		var bubble = $(".bubble");
+		// console.log(bubble);
+		bubble.on("click", function() {
+			// $(this).hide(1500).show(1500);
+			// $(this).css({"background":"red"});
+			// $(this).css({"width":"100px", "height":"100px"});
+			$(this).animate({"width":"100px", "height":"100px"});
+		})
+	</script>
+</body>
+</html>

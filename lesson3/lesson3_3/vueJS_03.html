@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style3_3.css">
+	<title>VueJS 03</title>
+</head>
+<body>
+
+	<div id="app">
+		<div v-if="orange">Hello, Alex!</div>
+	</div>
+	
+
+	<script src="vue.min.js"></script>
+	<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			orange: true
+		}
+	})
+	
+</script>
+</body>
+</html>

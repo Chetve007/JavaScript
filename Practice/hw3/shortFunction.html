@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Short function</title>
+</head>
+<body>
+	<script>
+		var age = 19;
+		var res = age > 18 ? console.log(true) : console.log(false); // first
+
+		function checkAge(age) {
+			return age > 18 ? console.log(true) : console.log(false); // second
+		}
+
+		function checkAge2(age) { 		// third
+			if(age > 18)
+				return true;
+			return false;
+		}
+	</script>
+</body>
+</html>
+
+<!-- 2) Функции
+Сократите функцию checkAge() несколькими способами. Функция как и прежде должна возвращать true или false
+
+function checkAge(age) {
+	if(age > 18) {
+		return true;
+	} else {
+		return false;
+	}
+} -->

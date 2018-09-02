@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style3_3.css">
+	<title>VueJS 01</title>
+</head>
+<body>
+
+	<div id="app">
+		<span v-bind:title="message" v-bind:class="className">Наведи сюда, брат</span>    
+		<!-- v-bind => передача ключа, специальная директива для передачи из вью в атрибут -->
+	</div>
+	
+
+	<script src="vue.min.js"></script>
+		<script>
+		var app = new Vue({
+			el: "#app",
+			data: {
+				message: "Apples",
+				className: "someApples"
+			}
+		})
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style3_3.css">
+	<title>VueJS 07</title>
+</head>
+<body>
+
+	<div id="app">
+		{{ message }}
+	</div>
+	
+
+	<script src="vue.min.js"></script>
+	<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			message: "Hello, hi, my dear friend"
+		},
+		watch: {
+			message: function() {
+				console.log("Свойство message изменилось на " + this.message)
+			}
+		}
+	})
+</script>
+</body>
+</html>
