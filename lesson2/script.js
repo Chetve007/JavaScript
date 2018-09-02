@@ -17,6 +17,7 @@ for(var i = 0; i < tabsLink.length; i++) {
 		// console.log(tabsContent);
 		// console.log(tabsContent[linkId]);
 		tabsContent[linkId].style.display = "block";
+		
 	})
 }
 
